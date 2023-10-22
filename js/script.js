@@ -5,7 +5,7 @@ let seletor = 0;
 let limite = 0;
 
 function deslizar(e){
-    if(e == "right" && limite <= 1){
+    if(e == "right" && limite <= 2){
         limite = limite + 1
         seletor = seletor + 100;
         opc.style.transform = "translateX(-" + seletor + "px)";
