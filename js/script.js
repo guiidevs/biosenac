@@ -1,4 +1,7 @@
+let nome = prompt("Sejá bem-vindo. Como podemos te chamar?");
+const perfil = document.querySelector(".boasvindas");
 
+perfil.innerHTML = "Olá, " + nome;
 
 const opc = document.querySelector(".opcoes");
 let seletor = 0;
