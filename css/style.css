@@ -165,11 +165,17 @@ section.nav .opc .icon i{
     transition: 0.2s;
 }
 section.parceiros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.parceiros section{
+    margin: auto;
     margin: 30px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    justify-content: center;
+    gap: 40px;
+    justify-content: space-around;
     align-items: center;
 }
 .titulo{
@@ -177,7 +183,7 @@ section.parceiros{
     font-weight: bolder;
 }
 section.parceiros img{
-    max-width: 200px;
+    width: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
