@@ -10,6 +10,10 @@ hr{
     background-color: white;
     opacity: 50%;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
 /*padroes*/
 .btn_padrao{
         border: 0;
@@ -89,7 +93,7 @@ section.nav{
     overflow: hidden;
 }
 section.nav .navopc{
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     margin: 10px 10px 0;
@@ -105,6 +109,7 @@ section.nav .opcoes{
     margin: 10px;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     gap: 30px;
     transform: translateX(0px);
@@ -121,6 +126,25 @@ section.nav .opc .icon{
     padding: 30px;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.116);
+    transition: 0.2s;
+}
+@media (max-width: 400px) {
+    
+section.nav .opc .icon{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.116);
+    transition: 0.2s;
+}
+section.nav .opc{
+    font-size: 0.7rem;
+}
+}
+section.nav .opc .icon:hover{
+    cursor: pointer;
+    background-color: darkorange;
+    color: white;
+    transition: 0.2s;
 }
 section.nav .opc .icon i{
     font-size: 1.2rem;
@@ -133,31 +157,27 @@ section.nav .opc .icon i{
     border-radius: 10px;
     font-size: 0.9rem;
     font-weight: bolder;
+    transition: 0.2s;
+}
+.cartoes:hover{
+    background-color: darkorange;
+    cursor: pointer;
+    transition: 0.2s;
 }
 section.parceiros{
-    margin: 30px 10px;
-    display: flex;
-    flex-direction: column;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
-section.parceiros > span{
+.titulo{
     font-size: 1.5rem;
-    margin-top: -10px;
-    margin-bottom: 5px;
     font-weight: bolder;
 }
 section.parceiros img{
-    width: 100px;
+    max-width: 200px;
     border-radius: 20px;
     object-fit: cover;
-}
-.item{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.item span{
-    padding: 10px;
 }
